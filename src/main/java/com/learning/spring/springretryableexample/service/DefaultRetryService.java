@@ -16,7 +16,7 @@ public class DefaultRetryService implements RetryService {
         throw new MyRuntimeRetryException("Throw custom exception");
     }
 
-    
+
     @Recover
     public String recover(Throwable throwable) {
         log.info("Default Retry service test");
